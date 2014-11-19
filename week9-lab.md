@@ -11,7 +11,7 @@ Recall:
 		- asynchronicity is a problem 
 
 Theoretical framework for version-control:
-- model: Git
+- One model: Git
 	- emerges from software engineering 
 - The theory behind git:
 	- reading, writing, and JOURNALING
@@ -41,8 +41,8 @@ Theoretical framework for version-control:
 - remote server -----v1---v2---v3--->
 
 Remote server
-- the remote server allows you to have a universal timeline
-- you have multiple people working on mutiple files, yet you both have a central, common timeline for versions
+- Pusing versions to the remote server creates a universal timeline
+- You can have multiple people working on mutiple files, yet you both have a central, common timeline for versions
 - If you try to synch with a remote branch that is different with yours, you have to synch up with it and then you can push your changes: error "Your head is behind"
 
 
@@ -52,7 +52,7 @@ Remote server
 - Run `git init` to initialize versioning in that directory
 - `ls -a` shows the hidden files that have been created
 - `git status` will tell you what is happening in that directory and where you are
-- create a file, test1.txt
+- Create a file, test1.txt
 - Now, run `git status`; it will tell you that there is one untracked file
 - Run `git add`
 - Run `git status` and we will see that that it has been staged
@@ -61,24 +61,24 @@ Remote server
 - `git comit -m` - the m flag says put notes in line with command
 - ```git commit -m "Today I added test and test3 to my repo"```
 - What happens if you change a file after you change it?
-- You have to stage it again (the earlier verion of test2 is still there) in order to have a later version.
+	- You have to stage it again (the earlier verion of test2 is still there) in order to have a later version.
 
 ### To push to Github:
-- create a new repository
-- `git remote add origin https://github.com/sceckert/code-poetry-test.git` adds the commit to the remote server
-- For the first push to the server: 
+- Create a new repository
+- Connect to the repository by adding it with `git remote add origin https://github.com/sceckert/code-poetry-test.git` 
+	- NB: For the first push to the server: 
 `git push -u origin master`
-- if you accidently put everything under version control ` rm -rf /git.`
-- make more changes to test2, stage them, then 
-- `git comit -m "my changes to test2"`
-- `git push`
+	- If you accidently put everything under version control ` rm -rf /git.`
+- Make more changes to test2, stage them, then Run `git commit -m "my changes to test2"`
+- Push the changes to the directory with `git push`
 - Now, say you made a change to test 2 that you did not like
-- `git checkout test2.txt` will rollback to the last staged version
-- When github compares versions, it is a line-by-line comparison. For this reason must be plain text
+	- `git checkout test2.txt` will rollback to the last staged version
+- When Github compares versions, it is a line-by-line comparison. For this reason must be plain text
 
-Other uses:
-- You can run a diff on the changes
-- The work of editing; journals etc. can be done.
+Other uses of `git`:
+- You can run a `diff` on the changes
+- You can create workflow
+	- Git's version control allows you to manage a project journals etc. can be done.
 
 Our lab notes are due as a Github repository
 

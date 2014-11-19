@@ -3,6 +3,7 @@
 
 ## Files and file permissions; wget and brew
 
+## Key Commands
 ### Friends!
 ```head
 tail
@@ -28,12 +29,12 @@ traceroute
 ### Flow [allow you to string commands together]
 ```|
 >>
-xargs```
+xargs
+```
 
-How should humanities computing be taught? Foundational approach
 
 ### Today: What is brew?
-Question: Package Control and the installation process
+Question: How does package control and installation work?
 - When you install an application (more than just a file), the program installs itself in many different places. There are many dependancies and using pieces of the operating system located elsewhere. 
 - Each program doesn’t have to reinvent the wheel
 - A problem: what happens when you have two programs that are both using a package but different versions (they’re both dependent on the same library).
@@ -56,38 +57,36 @@ nb: you can use curl for a similar thing, but it’s more cumbersome
 
 ### Files and extensions
 
-To see the first few lines of a file 
-- `head [document]`
+- To see the first few lines of a file: 
+`head [document]`
 
-To see the last few lines of a file
-- `tail [document]`
+- To see the last few lines of a file
+`tail [document]`
 
-To open a file:
-- `open [file]`
-- When you open a file with .pdf the system will go through and find out how to open that extension
-- The PDF reader understands it.
-
-If we rename that file
--`cp heidegger.pdf random.name`
-- and open it using `head`, we will seen it is the same file
-- However, if we try to open the file, the system doesn’t recognize the extension.
-- Likewise, if we create a file with “.pdf” extension with some random text `echo "some stuff" > testingpdf.pdf`
-- We can open this file using head
-- But if we try and open it, we get an error. This is because it is missing the proprietary Adobe encoding.
+- To open a file: `open [file]`
+- Applications read extensions. 
+	- When you open a file with .pdf the system will go through and find out how to open that extension
+	- The PDF reader understands it.
+	- If we rename that file, `cp heidegger.pdf random.name`
+and open it using `head`, we will seen it is the same file
+	- However, if we try to open the file, the system doesn’t recognize the extension.
+	- Likewise, if we create a file with “.pdf” extension with some random text `echo "some stuff" > testingpdf.pdf`
+	- We can open this file using head
+	- But if we try and open it, we get an error. This is because it is missing the proprietary Adobe encoding.
 
 KEY: The file is the file; you can name it what you want (though other things will try to guess what it is by the extension)
 
 ### Search
 
-To find files:
+- To find files:
 `locate`
-- locate looks at the database of files that sits in your system; super fast
-- like Spotlight, indexed
+- The `locate` command looks at the database of files that sits in your system; a super-fast search
+- Like Spotlight, it is indexed (weekly, though you can change this)
 - `locate` uses regular expressions
-- `locate “test*”`
+		- `locate “test*”`
 - `locate `` —regex test*`
-To recursively remove with confirmation:
--`rm -ri test*`
 
+### Additional commands:
+- To recursively remove with confirmation: `rm -ri test*`
 - shortcut: `rmdir` — BUT THIS DOES not take the confirmation command	
 

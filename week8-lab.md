@@ -32,7 +32,7 @@
 - "The behavior of the computer at any moment is determined by the symbols which he is observing and his 'state of mind' at that moment (250).
 - But then he defines it on 253 differently.  
 
-Some questions:
+### Software? Hardware?
 
 - What is the software here?: Is it the operation? The "state of mind"? The symbol?
 - What is the hardware?: the tape has a material substratum?
@@ -42,7 +42,7 @@ Some questions:
 - The physical counterpart on page 253 is likened to a man who makes a note of instructions to himself
 - So long as a field can be reduced to a finite set of conditions, it can be emulated. 
 
-Weasel Words:
+### Weasel Words:
 
 0. Create a new project directory.
 1. Copy three of your past term papers (or anything else that you have written).

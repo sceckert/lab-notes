@@ -1,25 +1,26 @@
 # Week 3: Lab 
-###Markdown
+## Markdown
 9/24/2014
 
-What we discussed last time:
-	- thinking about our data as vectors 
-	- useful for studying the institutional context
+### Recap: 
+- What we discussed last time:
+	- Think about data as vectors 
+	- This allows us to study, among other things, the institutional context
 
-	Blog ———————[interface, eg WordPress]————>
-	Mail ————————[interface, eg Gmail]——————————>
-	Wordpressing ——————[interface, eg Word]————>
+``` 
+Blog ———————[interface, eg WordPress]————>
+Mail ————————[interface, eg Gmail]——————————>
+Wordpressing ——————[interface, eg Word]————>
+```
 
-Instead of having multiple different interfaces for the way we write — UNIFY them (in plain text) 
+- Instead of having multiple different interfaces for the way we write UNIFY them (in plain text) 	
+	- What plaintext affords us: search, preservation, encryption
+	- Once you unify the environment — > more powerful tools! 
+- How to do this:
+	- Plain Text, Markdown, 
+	- Text editors — the editor does not matter
 	
-- what this affords us: search, preservation, encryption
-- once you unify the environment — > more powerful tools! 
-
-How to do this:
-- Plain Text, Markdown, 
-- Text editors — the editor does not matter
-	
-###Markdown formatting:
+### Markdown formatting:
 [ the key idea: you're not identifying stylistic elements, you're identifying semantic ones]
 
 **emphasis 2**  
@@ -37,7 +38,7 @@ Subheading
 ----
 
 
-List:
+### List:
 - unordered one
 - unordered two
 - unordered three
@@ -47,7 +48,7 @@ List:
 2. Order list two
 3. Order list three
 
-Blockquote:
+### Blockquotes and code blocks:
 
 >Here is my lovely blockquote of text. If I want it to go on, it will continue to be a quote until you enter a carriage return.
 
@@ -80,7 +81,9 @@ If you're working on say, medieval manuscript, you can use the codeblock to pres
 - Many web intefaces will accept Markdown
 - Pick your renderer depending on what you're writing for. 
 	- There is a tool for doing this: Pandoc!
-- Bibliography: You can connect Markdown to the .bib format
+
+### Bibliography
+- You can connect Markdown to the .bib format
 	- Eg: [@hugo_works_1907, p. 230]
 	- See Dennis' [tutorial on the Programming Historian](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
 

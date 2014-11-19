@@ -66,7 +66,7 @@ rm  			-ri 			temp/
 ```
 “command” 	“flag” 		“target”
 
-## Best practices in file labeling: 
+### Best practices in file labeling: 
 no spaces  
 no capitals  
 -i (or subject)
@@ -79,20 +79,20 @@ Unix Philosophy:
 - by piping the output of one command into another, you can do more complicated things. 
 
 
-For this lab: 
+## Testing Commands
 - Make a directory called “temp”
-` dyn-160-39-132-68:~ Sierra$ mkdir temp `
+` mkdir temp `
 - Make a file:
 ```
-Sierra$ touch test.txt
-Sierra$ ls
+touch test.txt
+ls
 test.txt
 ```
 - Echo: 
 ```Sierra$ echo "hey guys"
 hey guys```
 - Put the echoed text into test.txt
-```dyn-160-39-132-68:temp Sierra$ echo "hey guys" > test.txt```
+```echo "hey guys" > test.txt```
 - This will overwrite it.
 - To append, use the operator “>>”
 - echo “hello again” >> test.txt
@@ -105,48 +105,45 @@ history | less
 - To exit this, press “q”
 - To search your history for the word “hello”
 ```
-dyn-160-39-132-68:temp Sierra$ history | grep "hello"
-  518  echo "hello word" > test.txt
-  521  echo "hello word" >> test.txt
-  523  echo "hello again" >> test.txt
-  529  history | grep "hello"
+ history | grep "hello"
+ echo "hello word" > test.txt
+ echo "hello word" >> test.txt
+ echo "hello again" >> test.txt
+ history | grep "hello"
 ```
 - to reverse search through your history
 `Ctrl -R` 
 then type in the word to search. IF YOU HIT ENTER IT WILL EXECUTE
+
+### Copying, Renaming, and Moving Files
 - Make a new directory, temp2, and two targets
 ```
-Sierra$ mkdir temp2
-Sierra$ touch target1.txt
-Sierra$ touch target2.txt
+mkdir temp2
+touch target1.txt
+touch target2.txt
 ```
 - Copy target2 to a new file called target3
-` Sierra$ cp target2.txt target-three.txt `
+` cp target2.txt target-three.txt `
 - Echo “hello world” into target1.txt
 - Echo “hello world 2” into target2.txt 
 - Copy target1 onto target2
-- You’ve overwritten the file!
-- INSTEAD: always use -i  ( a flag, “ask for confirmation before overwriting”) with cp
+	- You’ve overwritten the file!
+	- INSTEAD: always use -i  ( a flag, “ask for confirmation before overwriting”) with cp
 ```
-Sierra$ cp -i target1.txt target2.txt 
+cp -i target1.txt target2.txt 
 overwrite target2.txt? (y/n [n]) 
-
--Moving files
 ```
- Sierra$ mv -i target-three.txt ..
- Sierra$ ls
-target1.txt	target2.txt
-Sierra$ ls ..
-target-three.txt	temp2			test.txt
+- Moving files
+```
+mv -i target-three.txt ..
 ```
 - To rename “target-three” to “target3” when it is one directory up
-```Sierra$ mv -i ../target-three.txt target3.txt```
+```mv -i ../target-three.txt target3.txt```
 - To remove a file
 ```
-dyn-160-39-132-68:temp2 Sierra$ touch a_very_long_file.txt
-dyn-160-39-132-68:temp2 Sierra$ rm -i a_very_long_file.txt 
-remove a_very_long_file.txt? y
-dyn-160-39-132-68:temp2 Sierra$ 
+touch a_very_long_file.txt
+rm -i a_very_long_file.txt 
+>> remove a_very_long_file.txt? y
 ```
 - To copy file up
 ```
@@ -176,7 +173,7 @@ Sierra$ mv -i test.txt trash/
 ```
 - To go back to the previous directory:
 ` cd -`
-- You can configure your prompt to be the entire path to file (and this helps you identify when you’re on your machine.
+- NB: You can configure your prompt to be the entire path to file (and this helps you identify when you’re on your machine.
 
 Next time: using `wget`
 

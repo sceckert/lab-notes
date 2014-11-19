@@ -1,12 +1,13 @@
 # Week 10 Lab
 11/19/2014
+
 ## More on Git, Github, Branching
 
 ### Recap:
 Recall from last time: versioning allows you to fashion your versions on the universal timeline.
 
-Branching:
-- Recall Model 1: one remote server and many collaborators model
+### Branching:
+- Recall: Verioning Model 1 = one remote server and many collaborators model
 	- Each individual logs in and has permission to work in the directory on the remote server
 	- conflicts: if two users attempt to edit the same thing, their clobber the other person’s changes
 	- This is using Git but is more like Googledoc
@@ -25,4 +26,6 @@ Branching:
 	- This is a great workflow for project management and for managing a journal. This is, in essence an editorial workflow.
 
 ### Assignment
-- open a new repository called “lab-notes” and put lab notes under version control
+- Open a new repository called “lab-notes” 
+- Put lab notes under version control
+- Push to "lab-notes" repository
