@@ -43,7 +43,8 @@ Using the `find` command
 - To search for unique occurences of words on unique line:
 	- `sort oranges.txt | uniq -c`
 	- It will print: 
-```1 apple meh
+```
+1 apple meh
    3 banana
    1 mushroom
    1 orang orange
